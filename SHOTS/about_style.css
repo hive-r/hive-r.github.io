@@ -55,7 +55,7 @@ main {
 /* About Section*/
 .about-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(1, 1fr); 
     grid-gap: 30px; 
 }
 
@@ -63,7 +63,7 @@ main {
 .photo img {
     filter: grayscale(1);
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 6/ 1;
     object-fit: cover; 
     transition: all 0.3s ease;
 }
@@ -74,8 +74,9 @@ main {
 }
 
 /* About Text*/
-.text h3, p {
+.text{
     color: #fff;
+    text-align: center;
 }
 
 /* Photographers Section */
