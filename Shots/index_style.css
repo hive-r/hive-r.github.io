@@ -1,5 +1,8 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
 }
@@ -42,7 +45,7 @@ nav a {
 }
 
 nav a:hover, .active-page {
-    color: #4CAF50;
+    color: #20c997;
 }
 
 /* Main */
@@ -56,8 +59,8 @@ main {
     padding: 20px;
 }
 
-/* Image Grid */
-.image-grid {
+/* Image Section */
+.image-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-gap: 30px; 
@@ -101,6 +104,7 @@ main {
     justify-content: center;
 }
 
+/* Image Content */
 .image-content {
     text-align: center;
     color: white;
@@ -110,7 +114,6 @@ main {
     font-size: 30px;
 }
 
-/* Image Button */
 .image-content .button {
     padding: 10px 20px;
     border: 2px solid white; 
@@ -124,7 +127,7 @@ main {
     color: black; 
 }
 
-/* Scroll */
+/* Scroll Top */
 #scroll-top {
     padding: 10px 20px;
     border: 2px solid white; 
@@ -145,6 +148,10 @@ footer {
     padding: 10px;
     text-align: center;
     color: #fff;
+}
+
+span{
+    color: #20c997;
 }
 
 

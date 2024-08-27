@@ -1,5 +1,8 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
 }
@@ -42,7 +45,7 @@ nav a {
 }
 
 nav a:hover, .active-page {
-    color: #4CAF50;
+    color: #20c997;
 }
 
 /* Main */
@@ -111,6 +114,20 @@ main {
     text-decoration: underline;
 }
 
+/* Scroll */
+#scroll-top {
+    padding: 10px 20px;
+    border: 2px solid white; 
+    background-color: transparent; 
+    color: white; 
+    text-decoration: none;
+}
+
+#scroll-top:hover {
+    background-color: white; 
+    color: black; 
+}
+
 /* Footer */
 footer {
     --bs-bg-opacity: 1;
@@ -118,4 +135,8 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+span{
+    color: #20c997;
 }

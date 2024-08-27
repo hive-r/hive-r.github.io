@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - SHOTS</title>
     <link rel="stylesheet" href="dashboard_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -26,6 +28,7 @@
         <section class="title">
             <h2>DASHBOARD</h2>
         </section>
+
         <section class="dropdown-section">
             <div class="dropdown">
                 <button>Categories</button>
@@ -39,9 +42,86 @@
             </div>
         </section>
 
+        <section id="home" class="home-section">
+            <h1>Manage Home</h1>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <h2>Add New Category</h2>
+                <label for="title">Category Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="image">Category Image:</label>
+                <input type="file" id="image" name="image" required>
+                <button type="submit" name="add_category">Add Category</button>
+            </form>
+            <hr>
+
+            <!-- Simulating categories for edit -->
+            <form action="#" method="POST">
+                <h2>Edit Categories</h2>
+                <input type="hidden" name="id" value="1">
+                <label for="title_1">Category Title:</label>
+                <input type="text" id="title_1" name="title" value="Sample Category" required>
+                <label for="image_path_1">Category Image Path:</label>
+                <input type="text" id="image_path_1" name="image_path" value="/path/to/image.jpg" required>
+                <label for="description_1">Category Description:</label>
+                <input type="text" id="description_1" name="description" value="Sample description" required>
+                <button type="submit" name="update_category">Update Category</button>
+                <button type="submit" name="delete_category">Delete Category</button>
+            </form>
+            <hr>
+
+            <h1>Manage Gallery</h1>
+            <h2>Add Images and Descriptions to Category</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label for="category_id">Select Category:</label>
+                <select id="category_id" name="category_id" required>
+                    <option value="1">Sample Category 1</option>
+                    <option value="2">Sample Category 2</option>
+                </select>
+                
+                <label for="images">Upload Images:</label>
+                <input type="file" id="images" name="images[]" multiple required>
+
+                <label for="descriptions">Descriptions (comma separated for each image):</label>
+                <textarea id="descriptions" name="descriptions" required></textarea>
+                
+                <button type="submit" name="add_category_images">Add Images & Descriptions</button>
+            </form>
+
+            <h2>Delete Images</h2>
+            <!-- Simulating images for delete -->
+            <h3>Sample Category 1</h3>
+            <form action="#" method="POST">
+                <input type="hidden" name="image_id" value="1">
+                <img src="/path/to/image1.jpg" alt="Image" style="width: 100px;">
+                <p>Sample Image Description 1</p>
+                <button type="submit" name="delete_image">Delete Image</button>
+            </form>
+            <hr>
+            <p>No more images found in this category.</p>
+        </section>
+        
     </main>
 
     <footer>
-        <p>&copy; 2023 SHOTS. All rights reserved. | IVERSON</p>
+        <p>&copy; 2023 SHOTS. All rights reserved. |<span> IVERSON</span></p>
+        <button id="scroll-top">Back to Top</button>
     </footer>
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('#scroll-top').fadeIn();
+                } else {
+                    $('#scroll-top').fadeOut();
+                }
+            });
+
+            $('#scroll-top').click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+                return false;
+            });
+        });
+    </script>
+</body>
 </html>

@@ -1,5 +1,8 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
 }
@@ -42,7 +45,7 @@ nav a {
 }
 
 nav a:hover, .active-page {
-    color: #4CAF50;
+    color: #20c997;
 }
 
 /* Main */
@@ -71,10 +74,6 @@ main {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
     grid-gap: 30px; 
-}
-
-/* Image Container */
-.about-section {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -86,28 +85,18 @@ main {
     object-fit: cover; 
 }
 
-/* About Text*/
-.text{
+.about-text{
     color: #fff;
     text-align: center;
 }
 
 /* Photographers Section */
-.title-photographers {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-    color: #fff;
-    font-size: 40px;
-    text-align: center;
-}
-
-.photographers {
+.photographers-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-gap: 30px; 
 }
 
-/* Photographers Photo */
 .photographer{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
@@ -145,16 +134,30 @@ main {
 
 /* Photographers Links */
 .contact-links {
-    color: #ccc;
+    color: #20c997;
 }
 
 .contact-links a {
-    color: #ccc;
+    color: #20c997;
     text-decoration: none;
 }
 
 .contact-links a:hover {
-    text-decoration: underline;
+    color: #fff;
+}
+
+/* Scroll Top */
+#scroll-top {
+    padding: 10px 20px;
+    border: 2px solid white; 
+    background-color: transparent; 
+    color: white; 
+    text-decoration: none;
+}
+
+#scroll-top:hover {
+    background-color: white; 
+    color: black; 
 }
 
 /* Footer */
@@ -164,4 +167,8 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+span{
+    color: #20c997;
 }
