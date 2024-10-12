@@ -1,0 +1,395 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f6f4f3
+}
+
+html {
+    scroll-padding-top: 40px; 
+}
+
+/* NAV */
+.navbar {
+    background-color: #f6f4f3;
+    margin-top: 10px ;
+}
+
+.navbar img {
+    width: 50.2px;
+    height: 42.6px;
+}
+
+.navbar .title {
+    color: #31241e;
+    font-size: 23.1pt;
+    font-weight: 600;
+}
+
+.navbar .nav-link {
+    color: #31241e;
+    font-size: 12pt;
+    font-weight: 500;
+    margin-left: 55px;
+}
+
+.navbar .nav-link:hover {
+    color: #86654b;
+}
+
+.navbar .nav-link.active {
+    color: #86654b;
+    font-size: 15pt;
+    font-weight: 600;
+    text-decoration: underline 3px solid;
+}
+
+/* HOME */
+#home .overlay-text {
+    color: #31241e;
+    font-size: 25pt;
+    font-weight: 600;
+    position: absolute;
+    bottom: 30px; 
+    left: 40px; 
+}
+
+#home .uniform-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; 
+    object-fit: cover; 
+}
+
+#home .home-item {
+    color: #31241e;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 11pt;
+}
+
+#home .btn{
+    color: #fff;
+    background-color: #d1c8c1;
+    border-radius: 50px;
+    font-size: 18pt;
+    width: 200px;
+}
+
+#home .btn:hover{
+    color: #fff;
+    background-color: #86654b;
+}
+
+/* ABOUT */
+#about .about-img {
+    width: 100%;
+    height: auto;
+    max-height: 550px; 
+    object-fit: cover; 
+}
+
+#about .about-item {
+    color: #31241e;
+    margin-top: 60px;
+    text-align: justify;
+}
+
+#about h3{
+    font-size: 15pt;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+#about h2{
+    font-size: 26.1pt;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#about h4{
+    font-size: 11pt;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#about p{
+    font-size: 13pt;
+}
+
+#about .btn{
+    color: #fff;
+    background-color: #d1c8c1;
+    border-radius: 50px;
+    font-size: 13pt;
+    width: 200px;
+}
+
+#about .btn:hover{
+    color: #fff;
+    background-color: #86654b;
+}
+
+/* COURSE */
+#course .course-img {
+    width: 100%;
+    height: auto;
+    max-height: 280px; 
+    object-fit: cover; 
+}
+
+#course .course-item {
+    color: #31241e;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+#course h2{
+    font-size: 25.1pt;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#course h3{
+    font-size: 13pt;
+}
+
+#course p{
+    font-size: 12pt;
+}
+
+#course .btn{
+    color: #fff;
+    background-color: #d1c8c1;
+    border-radius: 50px;
+    font-size: 12pt;
+    width: 200px;
+}
+
+#course .btn:hover{
+    color: #fff;
+    background-color: #86654b;
+}
+
+/* SHOP */
+#shop .shop-img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; 
+    object-fit: cover; 
+    padding: 10px;
+}
+
+#shop .shop-item{
+    color: #31241e;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#shop .shop-item:hover{
+    border: 3px solid #86654b;
+}
+
+#shop .shop-item-text {
+    color: #31241e;
+    margin-top: 20px;
+}
+
+#shop h2{
+    font-size: 35pt;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#shop .btn{
+    color: #31241e;
+    background-color: #d1c8c1;
+    border-radius: 0px;
+    font-size: 12pt;
+    width: 200px;
+}
+
+#shop .btn:hover{
+    color: #fff;
+    background-color: #86654b;
+}
+
+/* CONTACT */
+#contact .contact-item{
+    color: #31241e;
+    margin-top: 65px;
+    margin-bottom: 60px;
+}
+
+#contact h2{
+    font-size: 33pt;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#contact h3{
+    font-size: 13pt;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#contact h4{
+    font-size: 15pt;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#contact p{
+    font-size: 12pt;
+    margin-bottom: 20px;
+}
+
+#contact .form-control{
+    color: #000;
+    background-color: #d1c8c1;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 10pt;
+}
+
+#contact .form-control:focus {
+    border: 3px solid #86654b;
+}
+
+#contact .btn{
+    color: #fff;
+    background-color: #d1c8c1;
+    border-radius: 50px;
+    font-size: 12pt;
+    width: 200px;
+}
+
+#contact .btn:hover{
+    color: #fff;
+    background-color: #86654b;
+}
+
+/* FOOTER */
+#footer .footer{
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1400px) {
+    .navbar .nav-link {
+        font-size: 11pt;
+        margin-left: 40px;
+    }
+    
+    .navbar .nav-link.active {
+        font-size: 13pt;
+    }
+
+    #home .overlay-text {
+        font-size: 20pt;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    #about h2 {
+        font-size: 22pt;
+    }
+
+    #course h2 {
+        font-size: 22pt;
+    }
+}
+
+@media (max-width: 1024px) {
+    #home .home-item {
+        font-size: 10pt;
+    }
+
+    #about p, #course p {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav .navbar .nav-link {
+        margin-left: 20px;
+        font-size: 10pt;
+    }
+
+    #about h2, #course h2 {
+        font-size: 20pt;
+    }
+
+    #home .home-item, #about .about-item, #course .course-item {
+        margin-top: 20px;
+    }
+
+    #home .btn, #about .btn, #course .btn {
+        width: 150px;
+        font-size: 14pt;
+    }
+
+    #home .overlay-text {
+        font-size: 18pt;
+    }
+
+    #about h2, #about h3 {
+        text-align: center;
+    }
+
+    #about p, #course p {
+        font-size: 11pt;
+    }
+}
+
+@media (max-width: 480px) {
+    #home .overlay-text {
+        font-size: 16pt;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    #home .home-item {
+        font-size: 9pt;
+    }
+
+    #about h2, #course h2 {
+        font-size: 18pt;
+    }
+
+    #about p, #course p {
+        font-size: 10pt;
+    }
+
+    #about .btn, #course .btn, #home .btn {
+        width: 130px;
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 390px) {
+    .navbar .nav-link {
+        font-size: 9pt;
+        margin-left: 15px;
+    }
+
+    #home .overlay-text {
+        font-size: 14pt;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    #home .btn, #about .btn, #course .btn {
+        width: 120px;
+        font-size: 10pt;
+    }
+
+    #home .home-item, #about h2, #course h2 {
+        font-size: 8pt;
+    }
+
+    #home img, #about img, #course img, .shop-img {
+        max-height: 150px;
+    }
+}
