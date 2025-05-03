@@ -8,7 +8,6 @@ Flappy Fish is a simple browser-based game inspired by Flappy Bird. Guide your f
 
 ## Features
 
-- Responsive design for desktop and mobile browsers
 - Smooth animations and controls
 - Score tracking and high score saving
 - Easy to customize graphics and sounds
